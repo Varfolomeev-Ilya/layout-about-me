@@ -1,0 +1,167 @@
+body {
+  font-family: sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* .root {
+  max-width: 1279px;
+  margin: 0 auto;
+} */
+
+.header {
+  
+  flex: 0 1 auto;
+  max-height: 750px;
+} 
+
+.header__top {
+  height: 120px;
+}
+
+.header__top-inner {
+  height: 125px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  max-width: 60px;
+  margin-top: 57px;
+}
+.logo__img {
+
+}
+.menu {
+  
+}
+.menu__list {
+  margin-top: 79px;
+}
+.menu__list-item {
+  list-style: none;
+  display: inline;  
+}
+.menu__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+.menu__link--active {
+}
+.header__content {
+  
+}
+
+.header__row {
+  display: flex;
+  flex-direction: row-reverse;  
+}
+
+.header__body {
+  margin-left: 131px;
+}
+
+.header__title {
+  font-size: 35px;
+  margin-top: 160px;
+}
+
+.header__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-top: 60px;
+}
+
+.header__btn {
+  width: 225px;
+  height: 65px;
+  background: #34547A;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.header__image {
+  margin-top: 200px;
+ 
+}
+
+.footer {
+  background: #34547A;
+  max-height: 151px;
+  
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer__title {
+  color: #fff;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+}
+.footer_-text {
+  color: #fff;
+  line-height: 20px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  width: 193px;
+  height: 12px;
+  margin-top: 10px;
+}
+
+.footer__info {
+  width: 193px;
+  height: 52px;
+  margin-bottom: 50px;
+}
+
+.footer__list {
+  margin: 56px 0px 55px 0px;
+  width: 175px;
+  height: 40px; 
+  padding: 8.6px;
+}
+
+.about-me {
+  background: white;
+  
+}
+
+.title__about-me {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+  margin-top: 120px;
+}
+
+.info__about-me {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 80px;
+  color: #727272;
+}
