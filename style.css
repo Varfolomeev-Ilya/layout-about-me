@@ -268,10 +268,30 @@ body {
 
 .galerry__item {
  flex: 1 1 auto;
- max-width: 480px;
- max-height: 485px;
+ min-width: 480px;
+ min-height: 485px;
+ background: url('img/images/Rectangle 7.svg');
+ opacity: 1.0;
+}
+ 
+.galerry__item-2 {
+  flex: 1 1 auto;
+  min-width: 480px;
+  min-height: 485px;
+  background: url('img/images/Rectangle 7.7.svg');
+  opacity: 1.0;
 }
 
+.galerry__item:hover {
+  cursor: pointer;
+  opacity: 0.3;
+ 
+}
+
+.galerry__item-2:hover { 
+  cursor: pointer;
+  opacity: 0.3;
+}
 
 .form__container {
   display: flex;
