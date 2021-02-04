@@ -33,9 +33,15 @@ body {
   padding-right: 250px
 }
 
+.menu {
+  max-width: 100%;
+  max-height: auto;
+}
+
 .menu__list {
   margin-top: 79px;
 }
+
 .menu__list-item {
   list-style: none;
   display: inline; 
@@ -207,7 +213,7 @@ body {
 
 .skills__image-img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   flex: 1 1 auto; 
 }
 
@@ -231,8 +237,8 @@ body {
   flex-direction: column;
 }
 .work__info {
-  width: 550px;
-  height: 170px;
+  max-width: 550px;
+  min-height: 170px;
   margin-top: 100px;
 }
 .work__title {
@@ -242,6 +248,8 @@ body {
   line-height: 37px;
   text-align: center;
   color: #000000;
+  margin-top: 50px;
+
 }
 .work__text {
   font-style: normal;
@@ -252,17 +260,18 @@ body {
   margin-top: 50px;
 }
 .work__image {
-  margin: 57px 405px 100px 405px;
-  max-width: 1110px;
+  /* margin: 57px 405px 100px 405px; */
+  max-width: 1100px;
   max-height: 600px;
-  margin-top: 60px;
+  margin-top: 100px;
   z-index: 0;
+  flex: 0 1 auto;
 }
 
 .work__image-img {
-  max-width: 1110px;
-  max-height: 600px;
-  flex: 1 1 auto;
+  max-width: 100%;
+  max-height: auto;
+  flex: 0 1 auto;
 }
 
 .work__vector {
@@ -378,8 +387,8 @@ body {
   background-color: #EEEFF1;
 }
 .form__info {
-  width: 540px;
-  height: 147px;
+  max-width: 540px;
+  max-height: 147px;
   padding-top: 120px;
 }
 .form__title {
@@ -400,7 +409,7 @@ body {
 }
 .form__filling {
   max-width: 600px;
-  max-height: 200px;
+  max-height: 380px;
   margin-top: 65px;
 }
 
@@ -452,7 +461,7 @@ body {
   text-align: center;
   border: none;
   text-decoration: none;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .footer {
@@ -613,7 +622,7 @@ body {
   }
 
   .menu {
-    display: none;
+   display: none;
   }
 
   .project {
@@ -680,12 +689,6 @@ body {
     min-height: 350px;
   }
 
-  .skills__image-img {
-    min-width: 100%;
-    min-height: 100%;
-    
-  }
-  
   .skills__rectangle {
    width: 290px;
    height: 4px;
@@ -699,18 +702,22 @@ body {
   }
 
   .work__container {
-    min-height: 600px;
+    min-height: 700px;
     background-color: #EEEFF1;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
   }
+
   .work__info {
-    max-width: 320px;
+    min-width: 320px;
     max-height: 170px;
     margin:0;
-    margin-top: 93px
+    /* margin-top: 93px; */ 
   }
+
   .work__title {
     font-style: normal;
     font-weight: 600;
@@ -719,6 +726,7 @@ body {
     text-align: center;
     color: #000000;
   }
+
   .work__text {
     font-style: normal;
     font-weight: normal;
@@ -727,20 +735,23 @@ body {
     text-align: center;
     margin-top: 50px;
   }
-  .work__image {
-    margin: 0;
-    min-width: 320px;
-    min-height: 185px;
+
+   /* .work__image {
+    margin: 0 auto;
+    max-width: 320px;
+    max-height: 200px;
     z-index: 0;
     margin-top: 57px;
+    flex: 1 1 auto;
+    display: flex;
   }
 
-  .work__img {
+  .work__image-img {
     max-width: 100%;
-    min-height: 100%;
-  
-  }
-  
+    max-height: auto;
+    flex: 1 1 auto;
+  }  */
+
   .work__vector {
    max-width: 75px;
    max-height: 75px;
@@ -885,17 +896,18 @@ body {
   }
 
   .form__filling {
-    max-width: 300px;
+    max-width: 100%;
     max-height: 380px;
-    margin:0;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 200px;
+    flex: 1 1 auto;
   }
   
   .form__name {
-    min-width: 290px;
+    min-width: 25%;
     max-height: 50px;
     color: #5F5D5D;
     font-style: normal;
@@ -912,7 +924,7 @@ body {
   }
   
   .form__email {
-    min-width: 290px;
+    min-width: 50%;
     max-height: 50px;
     color: #5F5D5D;
     font-style: normal;
@@ -929,7 +941,7 @@ body {
   }
   
   .form__textarea {
-    min-width: 290px;
+    min-width: 90%;
     min-height: 175px;
     color: #5F5D5D;
     font-style: normal;
@@ -952,7 +964,6 @@ body {
     
   }
 
- 
   .footer {
     background: #34547A;
     min-height: 210px;  
