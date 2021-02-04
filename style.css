@@ -5,31 +5,32 @@
 
 body {
   font-family: sans-serif;
+  min-width: 1280px;
   max-width: 1920px;
   margin: 0 auto;
   font-family: Roboto;
   font-style: normal;
-  min-width: 375px;
 }
 
 .header {
   background-color: #EEEFF1;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   max-height: 750px;
 } 
 
 .header__top {
-  height: 120px;
+  max-height: 120px;
 }
 
 .header__top-inner {
-  height: 125px;
+  max-height: 125px;
   display: flex;
   justify-content: space-around;
 }
 .logo {
   max-width: 60px;
   margin-top: 57px;
+  padding-right: 250px
 }
 
 .menu__list {
@@ -97,12 +98,12 @@ body {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 26px;
   letter-spacing: 0.1px;
   text-align: center; 
   max-height: 65px;
   max-width: 225px;
-  padding: 25px 41px 25px 41px;
+  padding: 20px 41px 25px 41px;
   border: none;
 }
 
@@ -160,7 +161,6 @@ body {
   margin-left: 50px;
   max-width:141px;
   max-height: 50px;
-  
 }
 
 .scills__container {
@@ -241,7 +241,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 .work__image {
   margin: 57px 405px 100px 405px;
@@ -269,11 +269,11 @@ body {
 
 .galerry__item {
  flex: 1 1 auto;
- min-width: 480px;
+ min-width: 25%;
  min-height: 485px;
  background: url('img/images/Rectangle 7.svg');
  opacity: 1.0;
- display: inline-block;
+ display: flex;
  position: relative;    
  line-height: 0;
  margin: 0 0 -5px 0;
@@ -281,11 +281,11 @@ body {
  
 .galerry__item-2 {
   flex: 1 1 auto;
-  min-width: 480px;
+  min-width: 25%;
   min-height: 485px;
   background: url('img/images/Rectangle 7.7.svg');
   opacity: 1.0;
-  display: inline-block;
+  display: flex;
   position: relative;    
   line-height: 0;
   margin: 0 0 -5px 0;
@@ -300,15 +300,11 @@ body {
 	top: 0;    
 	left: 0;   
 	background: transparent;
-<<<<<<< HEAD
-	background-image: linear-gradient(to left,  #0e7ad6, #0e7ad6); 
-=======
-	background-image: linear-gradient(to left, #11de93, #0e7ad6); 
->>>>>>> 414f0c81985fc3b14b921702b408c0519dc96729
+  background-image:  linear-gradient(to left,  #0e7ad6, #0e7ad6);
 	opacity: 0.8;
 }
 
-.galerry__item:hover:before {
+/* .galerry__item:hover:after {
   display: inline-block;
 	width: 52px;
 	height: 52px;
@@ -316,15 +312,16 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;    
-	z-index: 100;    
-	background: url('img/images/Rectangle 7.svg') 0 0 no-repeat;
-	opacity: 1;
-}
+	z-index: ;    
+  opacity: 0.8;
+  background-image: ('img/images/view.svg');
+} */
 
 .galerry__item:after {
   content: "";
 	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  background-image: ('img/images/view.svg');
 }
 
 .galerry__item-2:hover:after {
@@ -336,15 +333,11 @@ body {
 	top: 0;    
 	left: 0;   
 	background: transparent;
-<<<<<<< HEAD
-	background-image: linear-gradient(to left, #0e7ad6); 
-=======
-	background-image: linear-gradient(to left, #11de93, #0e7ad6); 
->>>>>>> 414f0c81985fc3b14b921702b408c0519dc96729
+	background-image: linear-gradient(to left, #0e7ad6,  #0e7ad6); 
 	opacity: 0.8;
 }
 
-.galerry__item-2:hover:before {
+/* .galerry__item-2:hover:before {
   display: inline-block;
 	width: 52px;
 	height: 52px;
@@ -355,7 +348,7 @@ body {
 	z-index: 100;    
 	background: url('img/images/Rectangle 7.7.svg') 0 0 no-repeat;
 	opacity: 1;
-}
+} */
 
 .galerry__item-2:after { 
   content: "";
