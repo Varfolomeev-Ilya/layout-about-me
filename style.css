@@ -105,6 +105,7 @@ body {
   max-width: 225px;
   padding: 20px 41px 25px 41px;
   border: none;
+  
 }
 
 .header__image {
@@ -179,6 +180,7 @@ body {
   font-size: 32px;
   line-height: 37px;
 }
+
 .skills__list {
   min-height: 450px;
   min-width: 575px;
@@ -330,7 +332,6 @@ body {
 .galerry__item:after {
   content: url('img/images/view.svg');
 	opacity: 0;
-  transition: opacity 0.5s ease-in-out;
   background-image: ('img/images/view.svg');
 }
 
@@ -353,7 +354,6 @@ body {
 .galerry__item-2:after { 
   content: url('img/images/view.svg');
 	opacity: 0;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .form__container {
@@ -363,11 +363,13 @@ body {
   align-items: center;
   background-color: #EEEFF1;
 }
+
 .form__info {
   width: 540px;
   height: 147px;
   padding-top: 120px;
 }
+
 .form__title {
   font-style: normal;
   font-weight: 600;
@@ -376,6 +378,7 @@ body {
   text-align: center;
   color: #000000;
 }
+
 .form__text {
   font-style: normal;
   font-weight: normal;
@@ -384,10 +387,12 @@ body {
   text-align: center;
   padding-top: 30px;
 }
+
 .form__filling {
   max-width: 600px;
   max-height: 200px;
   margin-top: 65px;
+  margin-bottom: 120px;
 }
 
 .form__name {
@@ -428,17 +433,6 @@ body {
   resize: none;
   border: none;
   padding: 17px 0px 0px 8px ;
-}
-
-.form__button {
-  min-width: 190px;
-  min-height: 55px;
-  background: #34547A;
-  color: white;
-  text-align: center;
-  border: none;
-  text-decoration: none;
-  margin-top: 100px;
 }
 
 .footer {
@@ -513,9 +507,7 @@ body {
   color: #727272;
 }
 
-
-/* mediaquerry */
-@media screen and (max-width:320px) {
+@media screen and (min-width:320px) and (max-width:482px) {
  
   body {
     font-family: serif;
@@ -719,7 +711,7 @@ body {
 
   .galerry__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     max-height: 750px;
     justify-content: space-around; 
@@ -767,7 +759,6 @@ body {
   .galerry__item:after {
     content: url('img/images/view.svg');
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
     background-image: ('img/images/view.svg');
   }
   
@@ -789,7 +780,6 @@ body {
   .galerry__item-2:after { 
     content: url('img/images/view.svg');
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
   }
 
   .form__container {
@@ -882,16 +872,6 @@ body {
     padding: 0px 0px 0px 10px ;
   }
   
-  .form__button {
-    max-width: 190px;
-    max-height: 55px;
-    background: #34547A;
-    color: white;
-    text-align: center;
-    border: none;
-    text-decoration: none;
-  }
- 
   .footer {
     background: #34547A;
     min-height: 210px;  
@@ -987,5 +967,4 @@ body {
   .header__button-list {
     margin-left: 0 auto;
   }
-    
 }
