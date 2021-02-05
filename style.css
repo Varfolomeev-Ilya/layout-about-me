@@ -283,38 +283,45 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 1000px;
-  justify-content: space-around; 
-  margin: 0 0 5px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* width: 960px; */
+  height: 1000px;
+  justify-content: center; 
+  align-items: center;
+  /* margin: 0 0 5px 0; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
 }
 
 .galerry__item {
- flex: 1 1 auto;
- min-width: 25%;
- min-height: 485px;
- background: url('img/images/Rectangle 7.svg');
+ /* max-width: 25%;
+ max-height:auto; */
  opacity: 1.0;
- display: flex;
- position: relative;   
+ /* position: relative;    */
  line-height: 0;
  margin: 0 0 -5px 0;
+ /* display: block; */
+ cursor: pointer;
+ /* float: left; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
  
 .galerry__item-2 {
-  flex: 1 1 auto;
-  min-width: 25%;
-  min-height: 485px;
-  background: url('img/images/Rectangle 7.7.svg');
+  /* max-width: 25%;
+  max-height:auto; */
   opacity: 1.0;
-  display: flex;
-  position: relative;    
+  /* position: relative;     */
   line-height: 0;
   margin: 0 0 -5px 0;
+  /* display: responsive; */
+  cursor: pointer;
+  /* float: left; */
 }
 
-.galerry__item:hover:after {
+/* .galerry__item:hover:after {
   align-items: center;
   justify-content: center; 
   cursor: pointer;
@@ -326,13 +333,8 @@ body {
 	left: 0;   
 	background: transparent;
   background-image:  linear-gradient(to left,  #34547A, #34547A);
-	opacity: 0.8;
-}
-
-.galerry__item:after {
+  opacity: 0.8;
   content: url('img/images/view.svg');
-	opacity: 0;
-  background-image: ('img/images/view.svg');
 }
 
 .galerry__item-2:hover:after {
@@ -348,13 +350,9 @@ body {
 	left: 0;   
 	background: transparent;
 	background-image: linear-gradient(to left, #34547A,  #34547A); 
-	opacity: 0.8;
-}
-
-.galerry__item-2:after { 
+  opacity: 0.8;
   content: url('img/images/view.svg');
-	opacity: 0;
-}
+} */
 
 .form__container {
   display: flex;
@@ -506,6 +504,8 @@ body {
   margin-top: 80px;
   color: #727272;
 }
+
+
 
 @media screen and (min-width:320px) and (max-width:482px) {
  
@@ -705,7 +705,7 @@ body {
     margin-top: 50px;
   }
 
-  .galerry {
+  /* .galerry {
     max-height: 818px;
   }
 
@@ -717,13 +717,12 @@ body {
     justify-content: space-around; 
     margin-top: 34px;
     margin-bottom: 34px;
-  }
+  } */
   
-  .galerry__item {
+  /* .galerry__item {
    flex: 1 1 auto;
    min-width: 160px;
    min-height: 160px;
-   background: url('img/images/Rectangle 7.svg');
    opacity: 1.0;
    display: flex;
    position: relative;    
@@ -780,7 +779,7 @@ body {
   .galerry__item-2:after { 
     content: url('img/images/view.svg');
     opacity: 0;
-  }
+  } */
 
   .form__container {
     display: flex;
@@ -969,3 +968,64 @@ body {
     margin-left: 0 auto;
   }
 }
+  /* @media screen and (max-width:2920px) and (min-width:320px) {
+    
+  .galerry__item {
+   flex: 1 1 auto;
+   min-width: 160px;
+   min-height: 160px;
+   opacity: 1.0;
+   display: flex;
+   position: relative;    
+   line-height: 0;
+  }
+   
+  .galerry__item-2 {
+    flex: 1 1 auto;
+    min-width: 160px;
+    min-height: 160px;
+    background: url('img/images/Rectangle 7.7.svg');
+    opacity: 1.0;
+    display: flex;
+    position: relative;    
+    line-height: 0;
+  }
+  
+  .galerry__item:hover:after {
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;    
+    left: 0;   
+    background: transparent;
+    background-image:  linear-gradient(to left,  #34547A, #34547A);
+    opacity: 0.8;
+    content: url('img/images/view.svg');
+  }
+  
+  .galerry__item-2:hover:after {
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;    
+    left: 0;   
+    background: transparent;
+    background-image: linear-gradient(to left, #34547A, #34547A); 
+    opacity: 0.8;
+    content: url('img/images/view.svg');
+  } */
+   
+
+ 
+
+    
+  
+
