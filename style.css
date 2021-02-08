@@ -168,7 +168,6 @@ body {
 }
 
 .numbers__item {
-  /* margin-left: 50px; */
   max-width:141px;
   max-height: 50px;
 }
@@ -771,17 +770,15 @@ body {
   }
 
   .galerry__container {
-    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
    }
 
   .galerry__item-img {
-    min-width: 100%;
     width: 100%;
-    min-width: 10%;
-    height: auto;
-    float: left;
   }
   
   .galerry__item-1 {
