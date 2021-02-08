@@ -280,21 +280,21 @@ body {
 }
 
 .galerry__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 5px 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin: 0 0 5px 0;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
 
 .galerry__item-img {
-  width: 100%;
-  min-width: 10%;
-  height: auto;
-  float: left;
+ width: 100%;
+ min-width: 10%;
+ height: auto;
+ float: left;
 }
 
 .galerry__item-1 {
@@ -385,7 +385,6 @@ body {
   line-height: 23px;
   border: none;
   padding: 8px
-
 }
 
 .form__email {
