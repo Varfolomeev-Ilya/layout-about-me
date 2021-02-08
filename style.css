@@ -28,18 +28,23 @@ body {
   justify-content: space-around;
 }
 .logo {
-  max-width: 60px;
   margin-top: 57px;
-  padding-right: 220px
+  padding-right: 230px
+}
+
+.logo__img {
+  width: 96px;
+  height: 60px;
 }
 
 .menu__list {
   margin-top: 79px;
+  margin-right: 100px;
 }
 .menu__list-item {
   list-style: none;
   display: inline; 
-  font-weight: 600; 
+  font-weight:600; 
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -67,27 +72,22 @@ body {
   margin-top: 25px;
 }
 
-.header__title {
-  font-size: 35px;
-  margin-top: 160px;
-  font-weight: 600;
-  font-family: Roboto;
+.header__title  {
+  margin-top: 130px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 48px;
   line-height: 79px;
+  color: #000000;
 }
 
 .header__text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: #727272;
-  margin-top: 30px;
+  margin-top: 40px;
   max-height: 550px;
-  font-weight: normal;
 }
 
 .header__button-list {
@@ -96,19 +96,18 @@ body {
 }
 
 .header__btn {
-  font-weight: 500;
   background: #34547A;
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-align: center; 
-  max-height: 65px;
-  max-width: 225px;
+  height: 65px;
+  width: 225px;
   padding: 20px 41px 25px 41px;
   border: none;
-  margin-bottom: 100px; 
+  margin-top: 45px; 
+  margin-bottom: 100px;
 }
 
 .header__image {
@@ -150,7 +149,6 @@ body {
 .text__about-me {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -395,7 +393,7 @@ body {
   font-size: 14px;
   line-height: 23px;
   border: none;
-  padding: 8px;
+  padding: 0px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -409,7 +407,7 @@ body {
   font-size: 14px;
   line-height: 23px;
   border: none;
-  padding: 8px;
+  padding: 0px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -424,7 +422,7 @@ body {
   line-height: 23px;
   resize: none;
   border: none;
-  padding: 17px 0px 0px 8px ;
+  padding: 17px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -525,7 +523,7 @@ body {
   .header {
     background-color: #EEEFF1;
     flex: 1 1 auto;
-    min-height: 780px;
+    min-height: 820px;
   } 
 
   .header__top {
@@ -540,13 +538,12 @@ body {
   .logo {
   min-height: 100px;
   margin: 0 auto;
-  padding-right: 250px;
   }
 
   .logo__img {
     width: 96px;
     height: 60px;
-    margin-top: 22px;
+    margin-top: 30px;
   }
 
   .header__row {
@@ -770,9 +767,10 @@ body {
   }
 
   .galerry__container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
     margin-top: 30px;
     margin-bottom: 30px;
    }
@@ -782,8 +780,7 @@ body {
   }
   
   .galerry__item-1 {
-    max-width: 50%;
-    max-height:auto;
+    min-width: 50%;
     opacity: 1.0;
     position: relative;   
     line-height: 0;
@@ -794,8 +791,7 @@ body {
   }
   
   .galerry__item-2 {
-    max-width: 50%;
-    max-height:auto; 
+    min-width: 50%;
     opacity: 1.0;
     position: relative;    
     line-height: 0;
@@ -865,7 +861,7 @@ body {
     line-height: 23px;
     border: none;
     margin-bottom: 21px;
-    padding: 0;
+    padding: 0px 0px 0px 20px ;
   }
 
   .form__name[type='text'] {
@@ -881,7 +877,7 @@ body {
     font-size: 14px;
     line-height: 23px;
     border: none;
-    padding: 0;
+    padding: 0px 0px 0px 20px ;
     margin-left: 0;
   }
 
@@ -899,8 +895,7 @@ body {
     line-height: 23px;
     resize: none;
     border: none;
-    padding: 0px 0px 0px 10px ;
-    margin-bottom: 80px;
+    padding: 15px 0px 0px 10px ;
   }
   
   .footer {
