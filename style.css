@@ -51,7 +51,7 @@ body {
   margin-right: 100px;
 }
 
-.menu__list-item {
+.menu__list--item {
   list-style: none;
   display: inline; 
   font-weight:600; 
@@ -544,7 +544,7 @@ body {
   }
   
   .header__top-inner {
-    max-height: 150px;
+    mix-height: 150px;
     padding-bottom: 67px;
   }
 
