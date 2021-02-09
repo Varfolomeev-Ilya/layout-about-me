@@ -5,7 +5,6 @@
 
 body {
   font-family: sans-serif;
-  flex: 1 1 auto; 
   max-width: 1920px;
   margin: 0 auto;
   font-family: Roboto;
@@ -14,8 +13,8 @@ body {
 
 .header {
   background-color: #EEEFF1;
-  flex: 1 1 auto;
   max-height: 750px;
+  margin: 0 auto
 } 
 
 .header__top {
@@ -28,27 +27,37 @@ body {
   justify-content: space-around;
 }
 .logo {
-  max-width: 60px;
   margin-top: 57px;
-  padding-right: 220px
+  padding-right: 20px;
+}
+
+.logo__img {
+  width: 96px;
+  height: 60px;
 }
 
 .menu__list {
   margin-top: 79px;
+  margin-right: 100px;
 }
 .menu__list-item {
   list-style: none;
   display: inline; 
-  font-weight: 600; 
+  font-weight:600; 
   font-size: 14px;
   line-height: 26px;
-  letter-spacing: 1px;
 }
+
 .menu__link {
   text-decoration: none;
   color: #000;
   padding: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  line-height: 26px;
 }
+
 .menu__link--ul {
   color: #34547A;
 }
@@ -65,29 +74,26 @@ body {
   max-width: 540px;
   max-height: 430px;
   margin-top: 25px;
+  margin-right: 100px;
 }
 
-.header__title {
-  font-size: 35px;
-  margin-top: 160px;
-  font-weight: 600;
-  font-family: Roboto;
+.header__title  {
+  margin-top: 130px;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 79px;
+  color: #000000;
 }
 
 .header__text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: #727272;
-  margin-top: 30px;
+  margin-top: 40px;
   max-height: 550px;
-  font-weight: normal;
+  text-align: left;
 }
 
 .header__button-list {
@@ -96,24 +102,23 @@ body {
 }
 
 .header__btn {
-  font-weight: 500;
   background: #34547A;
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-align: center; 
-  max-height: 65px;
-  max-width: 225px;
+  height: 65px;
+  width: 225px;
   padding: 20px 41px 25px 41px;
   border: none;
-  margin-bottom: 100px; 
+  margin-top: 45px; 
+  margin-bottom: 100px;
 }
 
 .header__image {
   margin-top: 200px;
-  max-height: 225px;
+  height: 225px;
 }
 
 .about__me {
@@ -150,7 +155,6 @@ body {
 .text__about-me {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -184,7 +188,7 @@ body {
 .skills__title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 37px;
 }
@@ -250,7 +254,7 @@ body {
 .work__title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 37px;
   text-align: center;
@@ -265,6 +269,7 @@ body {
   line-height: 26px;
   text-align: center;
   margin-top: 50px;
+  color: #727272;
 }
 
 .work__image {
@@ -363,7 +368,7 @@ body {
 .form__title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 37px;
   text-align: center;
@@ -378,6 +383,7 @@ body {
   line-height: 26px;
   text-align: center;
   padding-top: 30px;
+  color: #727272;
 }
 
 .form__filling {
@@ -395,7 +401,7 @@ body {
   font-size: 14px;
   line-height: 23px;
   border: none;
-  padding: 8px;
+  padding: 0px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -409,7 +415,7 @@ body {
   font-size: 14px;
   line-height: 23px;
   border: none;
-  padding: 8px;
+  padding: 0px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -424,7 +430,7 @@ body {
   line-height: 23px;
   resize: none;
   border: none;
-  padding: 17px 0px 0px 8px ;
+  padding: 17px 0px 0px 21px ;
   font-family: Roboto;
 }
 
@@ -452,7 +458,7 @@ body {
   color: #fff;
   line-height: 25px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -464,7 +470,7 @@ body {
   line-height: 20px;
   font-size: 10px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   width: 193px;
   height: 12px;
   padding-top: 10px;
@@ -487,8 +493,15 @@ body {
   background: white; 
 }
 
+.title__about {
+  width: 100%;
+  height: auto;
+  margin-bottom: -50px;
+}
+
 .title__about-me {
   font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 37px;
@@ -525,11 +538,11 @@ body {
   .header {
     background-color: #EEEFF1;
     flex: 1 1 auto;
-    min-height: 780px;
+    min-height: 820px;
   } 
 
   .header__top {
-    max-height: 90px;
+    max-height: 70px;
   }
   
   .header__top-inner {
@@ -539,14 +552,14 @@ body {
 
   .logo {
   min-height: 100px;
-  margin: 0 auto;
-  padding-right: 250px;
+  margin: 0 ;
+  padding-right: 220px;
   }
 
   .logo__img {
     width: 96px;
     height: 60px;
-    margin-top: 22px;
+    margin-top: 30px;
   }
 
   .header__row {
@@ -575,7 +588,7 @@ body {
   .header__title {
   font-size: 32px;
   margin-top: 50px;
-  font-weight: 600;
+  font-weight: 500;
   min-width: 290px;
   min-height: 41px;
   font-family: Roboto;
@@ -588,15 +601,16 @@ body {
   .header__text {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 120%;
+    line-height: 100%;
     color: #727272;
     margin-top: 45px;
-    height: 98px;
-    width: 323px;
+    height: 90px;
+    width: 300px;
     font-weight: normal;
     text-align: center;
+    margin: 44px auto;
+    margin-bottom: 0px;
   }
   
   .header__button-list {
@@ -623,6 +637,8 @@ body {
     text-align: center;
     color: #727272;
     margin-top: -40px;
+    height: 90px;
+    width: 300px;
   }
 
   .info__about-me {
@@ -684,10 +700,11 @@ body {
   .skills__title {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
+    margin-top: 50px;
   }
 
   .skills__list {
@@ -743,7 +760,7 @@ body {
   .work__title {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
@@ -755,9 +772,13 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 120%;
+    line-height: 100%;
     text-align: center;
     margin-top: 40px;
+    color: #727272;
+    height: 90px;
+    width: 300px;
+    margin: 44px auto;
   }
 
   .work__vector {
@@ -765,14 +786,15 @@ body {
     max-height: 75px;
     z-index: 1;
     margin: 0;
-    margin-top: 24px;
+    margin-top: 10px;
     margin-right: 7px;
   }
 
   .galerry__container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
     margin-top: 30px;
     margin-bottom: 30px;
    }
@@ -782,8 +804,7 @@ body {
   }
   
   .galerry__item-1 {
-    max-width: 50%;
-    max-height:auto;
+    min-width: 50%;
     opacity: 1.0;
     position: relative;   
     line-height: 0;
@@ -794,8 +815,7 @@ body {
   }
   
   .galerry__item-2 {
-    max-width: 50%;
-    max-height:auto; 
+    min-width: 50%;
     opacity: 1.0;
     position: relative;    
     line-height: 0;
@@ -827,7 +847,7 @@ body {
   .form__title {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
@@ -865,7 +885,7 @@ body {
     line-height: 23px;
     border: none;
     margin-bottom: 21px;
-    padding: 0;
+    padding: 0px 0px 0px 20px ;
   }
 
   .form__name[type='text'] {
@@ -881,7 +901,7 @@ body {
     font-size: 14px;
     line-height: 23px;
     border: none;
-    padding: 0;
+    padding: 0px 0px 0px 20px ;
     margin-left: 0;
   }
 
@@ -899,8 +919,7 @@ body {
     line-height: 23px;
     resize: none;
     border: none;
-    padding: 0px 0px 0px 10px ;
-    margin-bottom: 80px;
+    padding: 15px 0px 0px 10px ;
   }
   
   .footer {
@@ -924,7 +943,7 @@ body {
     color: #fff;
     line-height: 25px;
     font-size: 21px;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
   }
   
@@ -933,7 +952,7 @@ body {
     line-height: 21px;
     font-size: 13px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     min-width: 193px;
     min-height: 12px;
     padding-top: 10px;
