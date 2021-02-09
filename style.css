@@ -553,14 +553,13 @@ body {
   .logo {
   min-height: 100px;
   margin: 0 ;
-  padding-right: 220px;
+  padding-right: 230px;
   }
 
   .logo__img {
-    width: 96px;
-    height: 60px;
+    width: 80px;
+    height: 30px;
     margin-top: 30px;
-    
   }
 
   .header__row {
