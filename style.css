@@ -62,11 +62,11 @@ body {
 .menu__link {
   text-decoration: none;
   color: #000;
-  padding: 15px;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-size: 16px;
   line-height: 26px;
+  padding-right: 42px;
 }
 
 .menu__link--ul {
