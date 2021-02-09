@@ -531,13 +531,13 @@ body {
   }
   
   .header__top-inner {
-    mix-height: 150px;
+    max-height: 150px;
     padding-bottom: 67px;
   }
 
   .logo {
     margin: 0 auto ;
-    padding-right: 250px;
+    padding-right: 240px;
   }
 
   .logo__img {
@@ -798,14 +798,13 @@ body {
   
   .form__container {
    min-width:320px;
+   width:auto;
    display: flex;
    min-height: 860px;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    background-color: #EEEFF1;
-   padding-left: 9px;
-   padding-right: 9px;
   }
 
   .form__info {
@@ -834,20 +833,17 @@ body {
   }
 
   .form__filling {
-   min-width: 280px;
-   width: 100%;
+   width:270px;
+   /* width: 100%; */
    height: auto;
-   margin:0;
    display: flex;
    flex-direction: column;
    justify-content: center;
    margin-top: 200px;
    padding-bottom: 6px;
-  }
+   }
   
   .form__name {
-   min-width: 290px;
-   max-height: 50px;
    color: #5F5D5D;
    font-style: normal;
    font-weight: normal;
@@ -855,33 +851,27 @@ body {
    line-height: 23px;
    border: none;
    margin-bottom: 21px;
-   padding: 0px 10px 0px 10px ;
   }
 
   .form__email {
-   min-width: 290px;
-   max-height: 50px;
    color: #5F5D5D;
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
    line-height: 23px;
    border: none;
-   padding: 0px 10px 0px 10px ;
-   margin-left: 0;
+   margin-left: 0px;
   }
 
   .form__textarea {
-   min-width: 290px;
-   min-height: 175px;
+   min-width: 255px;
    color: #5F5D5D;
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
    line-height: 23px;
    resize: none;
-   border: none;
-   padding: 15px 10px 10px 10px ;
+   border: none; 
   }
   
   .footer {
@@ -937,6 +927,36 @@ body {
    display:flex;
    justify-content: space-around;
    align-items: center;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:425px) {
+  .form__filling {
+    min-width: 340px;
+  }
+}
+
+@media screen and (min-width:420px) and (max-width:600px) {
+  .form__filling {
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+  .form__filling {
+    min-width: 580px;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+  .form__filling {
+    min-width: 780px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+  .form__filling {
+    min-width: 900px;
   }
 }
 
