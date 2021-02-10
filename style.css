@@ -37,7 +37,6 @@ body {
   height: 60px;
 }
 
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -325,7 +324,7 @@ margin: 0 auto;
   height: auto;
 }
 
-.galerry__item--1 {
+.galerry__item {
   width: 25%;
   opacity: 1.0;
   position: relative;   
@@ -334,19 +333,19 @@ margin: 0 auto;
   cursor: pointer;
 }
 
-.galerry__view {
+.galerry__item-view {
   display: none;
 }
 
-.galerry__item--1::before,
-.galerry__item--1::after {
+.galerry__item::before,
+.galerry__item::after {
   content: '';
   position: absolute;
   opacity: 0;
   transition: 0.2s;
 }
 
-.galerry__item--1:before {
+.galerry__item:before {
   background-image:  linear-gradient(to left,  #34547A, #34547A);
   top: 0;
   right: 0;
@@ -354,7 +353,7 @@ margin: 0 auto;
   left: 0;
 }
 
-.galerry__item--1::after {
+.galerry__item::after {
   background-image: url(img/images/view.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -365,11 +364,11 @@ margin: 0 auto;
   left: calc(50% - 20px);
 }
 
-.galerry__item--1:hover::before  {
+.galerry__item:hover::before  {
   opacity: 0.8;
 }
 
-.galerry__item--1:hover::after {
+.galerry__item:hover::after {
   opacity: 1;
 }
 
@@ -546,6 +545,7 @@ margin: 0 auto;
 }
 
 @media screen and (min-width:320px) and (max-width:1279px) {
+  
   * {
     margin: 0px;
     padding: 0px;
@@ -663,7 +663,6 @@ margin: 0 auto;
    margin-bottom: 82px;
   }
   
-
   .project {
    max-height:477px;
   }
@@ -812,7 +811,6 @@ margin: 0 auto;
    width: 100%;
   }
 
-
   .galerry__item-1 {
    min-width: 50%;
    opacity: 1.0;
@@ -823,7 +821,6 @@ margin: 0 auto;
    cursor: pointer;
   }
 
-  
   .form__container {
    min-width:320px;
    width:auto;
@@ -947,6 +944,7 @@ margin: 0 auto;
    height: 50px;
    margin: 50px 20px 32px 0px;
   }  
+
   .footer__list {
    width: 175px;
    height: 40px; 
@@ -958,34 +956,40 @@ margin: 0 auto;
 }
 
 @media screen and (min-width:375px) and (max-width:425px) {
+  
   .form__filling {
     min-width: 340px;
   }
 }
 
 @media screen and (min-width:425px) and (max-width:600px) {
+  
   .form__filling {
     min-width: 400px;
   }
 }
 
 @media screen and (min-width:600px) and (max-width:800px) {
+ 
   .form__filling {
     min-width: 580px;
   }
 }
 
 @media screen and (min-width:800px) and (max-width:1024px) {
+  
   .form__filling {
     min-width: 780px;
   }
 }
 
 @media screen and (min-width:1024px) and (max-width:1280px) {
+  
   .form__filling {
     min-width: 900px;
   }
-  .galerry__item--1::after {
+
+  .galerry__item::after {
     background-image: url(img/images/view.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -998,7 +1002,8 @@ margin: 0 auto;
 }
 
 @media screen and (min-width:1280px) and (max-width:5000px) {
-  .galerry__item--1::after {
+  
+  .galerry__item::after {
     background-image: url(img/images/view.svg);
     background-position: center;
     background-repeat: no-repeat;
