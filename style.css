@@ -5,7 +5,6 @@
 
 body {
   font-family: sans-serif;
-  max-width: 1920px;
   margin: 0 auto;
   font-family: Roboto;
   font-style: normal;
@@ -302,11 +301,20 @@ body {
   position: absolute;
 }
 
+.galerry {
+max-width: 1650px;
+display:flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+}
+
 .galerry__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 28px;
   margin-bottom: 28px;
 }
@@ -959,6 +967,7 @@ body {
     min-width: 900px;
   }
 }
+
 
 
   
